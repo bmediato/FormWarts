@@ -20,4 +20,9 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+  color: white;
+}
+
+.trybewarts-login {
+  display: flex;
 }
