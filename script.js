@@ -23,13 +23,13 @@ button.addEventListener('click', validar);
 const buttonSend = document.getElementById('submit-btn');
 const checkbox = document.getElementById('agreement');
 
-buttonSend.disabled = false;
-input.addEventListener("change", stateHandle);
-function stateHandle() {
-  if (checkbox.value === "") {
-    button.disabled = false;
-  } else {
-    button.disabled = true;
-  }
-}
+// buttonSend.disabled = false;
+// input.addEventListener("change", stateHandle);
+// function stateHandle() {
+//   if (checkbox.value === "") {
+//     button.disabled = false;
+//   } else {
+//     button.disabled = true;
+//   }
+// }
 // Fim Requisito 18 - fonte: https://www.delftstack.com/pt/howto/javascript/javascript-disable-button/  ,  https://www.w3schools.com/jsref/prop_select_disabled.asp
