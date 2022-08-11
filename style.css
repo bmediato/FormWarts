@@ -15,6 +15,15 @@
   color: white;
 }
 
+main {
+  background-color: white;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  color: white;
+}
+
 .flex-container {
   display: flex;
 }

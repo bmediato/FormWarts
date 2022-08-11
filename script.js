@@ -1,4 +1,3 @@
-
 function validar() {
   const email = document.getElementById('input-email');
   const senha = document.getElementById('input-senha');
