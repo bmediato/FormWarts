@@ -27,7 +27,7 @@ buttonSend.disabled = false;
 input.addEventListener("change", stateHandle);
 function stateHandle() {
   if (checkbox.value === "") {
-    button.disabled = false; 
+    button.disabled = false;
   } else {
     button.disabled = true;
   }
