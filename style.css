@@ -1,0 +1,10 @@
+.header {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.trybewarts-login {
+  display: flex;
+}
