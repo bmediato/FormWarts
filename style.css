@@ -8,6 +8,7 @@
   background-color: rgb(50, 167, 145);
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 #trybewarts-header-title {
@@ -25,4 +26,9 @@ main {
 
 .trybewarts-login {
   display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
 }
