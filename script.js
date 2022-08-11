@@ -17,9 +17,9 @@ function validar() {
 const button = document.getElementsByTagName('button')[0];
 console.log(button);
 button.addEventListener('click', validar);
-//Fim Requisito 3
+// Fim Requisito 3
 
-//Requisito 18 - Crie um botão de "Enviar" para submeter o formulário.
+// Requisito 18 - Crie um botão de "Enviar" para submeter o formulário.
 const buttonSend = document.getElementById('submit-btn');
 const checkbox = document.getElementById('agreement');
 
@@ -32,4 +32,4 @@ function stateHandle() {
     button.disabled = true;
   }
 }
-//Fim Requisito 18 - fonte: https://www.delftstack.com/pt/howto/javascript/javascript-disable-button/  ,  https://www.w3schools.com/jsref/prop_select_disabled.asp
+// Fim Requisito 18 - fonte: https://www.delftstack.com/pt/howto/javascript/javascript-disable-button/  ,  https://www.w3schools.com/jsref/prop_select_disabled.asp
