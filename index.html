@@ -2,17 +2,26 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Project TrybeWarts</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Project TrybeWarts</title>
 </head>
 
 <body>
   <header class="header">
-    <img src="./images/trybewarts-header-logo.svg" alt="logo da trybewarts" class="trybewarts-header-logo">
-    <h1 id="trybewarts-header-title">Trybewarts</h1> 
+    <img src="images/trybewarts-header-logo.svg" alt="" class="trybewarts-header-logo">
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <form action="" method="GET" enctype="multipart/formdata" class="trybewarts-login">
+      <label for="e-mail">
+        <input type="e-mail" name="email" id="input-email" placeholder="E-mail">
+      </label>
+      <label for="input-senha">
+        <input type="password" name="password" id="input-senha" placeholder="Senha">
+      </label>
+      <button type="submit">Entrar</button>
+    </form>
   </header>
   <main class="flex-container">
     <form id="evaluation-form" class="flex-container" action="">
@@ -21,5 +30,6 @@
       <input type="email" name="" id="input-email" placeholder="Email">
     </form>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
