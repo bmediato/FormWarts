@@ -25,8 +25,10 @@
   </header>
   <main class="flex-container">
     <form id="evaluation-form" class="flex-container" action="">
-      <input type="text" name="" id="input-name" placeholder="Nome">
-      <input type="text" name="" id="last-name" placeholder="Sobrenome">
+      <div class="container">
+        <input type="text" name="" id="input-name" placeholder="Nome">
+        <input type="text" name="" id="last-name" placeholder="Sobrenome">
+      </div>
       <input type="email" name="" id="input-email" placeholder="Email">
       <label for="house">Casa:
         <select id="house">
@@ -46,13 +48,40 @@
       <label for="comida-3">
         <input type="radio" name="family" value="FullStack">FullStack
       </label>
+      <!-- requisito 13 -->
+      <label id="label-content">Qua conteúdo você está com mais vontade de aprender? </label>
+      <label for="conteudo1">
+        <input type="checkbox" id="conteudo1" name="conteudo" class="subject" value="HoFs">Hofs
+      </label>
+      <label for="conteudo2">
+        <input type="checkbox" id="conteudo2" name="conteudo" class="subject" value="Jest">Jest
+      </label>
+      <label for="conteudo3">
+        <input type="checkbox" id="conteudo3" name="conteudo" class="subject" value="Promises">Promises
+      </label>
+      <label for="conteudo4">
+        <input type="checkbox" id="conteudo4" name="conteudo" class="subject" value="React">React
+      </label>
+      <label for="conteudo5">
+        <input type="checkbox" id="conteudo5" name="conteudo" class="subject" value="SQL">SQL
+      </label>
+      <label for="conteudo6">
+        <input type="checkbox" id="conteudo6" name="conteudo" class="subject" value="Python">Python
+      </label>
       <label for="" class="textarea">Deixe seu comentário:</label>
       <textarea maxlength="500"></textarea>
+      <div>
+        <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+        <input type="checkbox" id="agreement">
+      </div>
     </form>
     <aside>
       <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
     </aside>
   </main>
+  <footer>
+    Direitos reservados à Trybewarts©
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
