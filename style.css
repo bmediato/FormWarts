@@ -1,27 +1,39 @@
-
 * {
-    margin: 0;
+  margin: 0;
 
 }
 
 .header {
-    display: flex;
-    background-color: rgb(50, 167, 145);
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #trybewarts-header-title {
-    color: white;
-
+  color: white;
 }
 
-.trybewarts-login {
+main {
+  background-color: white;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  color: white;
+}
+
+.flex-container {
   display: flex;
 }
 
 #evaluation-form {
   display: flex;
   flex-direction: column;
+  width: 675px;
+}
+
+.trybewarts-login {
+  display: flex;
 }
