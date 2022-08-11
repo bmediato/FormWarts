@@ -36,3 +36,8 @@ main {
 .trybewarts-login {
   display: flex;
 }
+
+/* Requisito 21 */
+#form-data {
+  display: none;
+}

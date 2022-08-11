@@ -20,8 +20,8 @@ button.addEventListener('click', validar);
 // Fim Requisito 3
 
 // Requisito 18 - Crie um botão de "Enviar" para submeter o formulário.
-const buttonSend = document.getElementById('submit-btn');
-const checkbox = document.getElementById('agreement');
+// const buttonSend = document.getElementById('submit-btn');
+// const checkbox = document.getElementById('agreement');
 
 // buttonSend.disabled = false;
 // input.addEventListener("change", stateHandle);
