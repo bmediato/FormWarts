@@ -29,7 +29,7 @@ main {
 
 #evaluation-form {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /*Requisito 6*/
   width: 675px;
 }
 
