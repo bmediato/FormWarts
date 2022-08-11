@@ -1,15 +1,23 @@
 * {
-    margin: 0;
+  margin: 0;
 
 }
 
 .header {
-    display: flex;
-    background-color: rgb(50, 167, 145);
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #trybewarts-header-title {
-    color: white;
+  color: white;
+}
+
+main {
+  background-color: white;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
 }
