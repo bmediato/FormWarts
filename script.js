@@ -32,6 +32,6 @@ function stateHandle() {
     buttonSend.disabled = false;
   }
 }
-checkbox.addEventListener("change", stateHandle);
+checkbox.addEventListener('change', stateHandle);
 
 // Fim Requisito 18 - fonte: https://www.delftstack.com/pt/howto/javascript/javascript-disable-button/  ,  https://www.w3schools.com/jsref/prop_select_disabled.asp
