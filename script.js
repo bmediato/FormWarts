@@ -20,16 +20,18 @@ button.addEventListener('click', validar);
 // Fim Requisito 3
 
 // Requisito 18 - Crie um botão de "Enviar" para submeter o formulário.
-// const buttonSend = document.getElementById('submit-btn');
-// const checkbox = document.getElementById('agreement');
+const buttonSend = document.getElementById('submit-btn');
+const checkbox = document.getElementById('agreement');
 
-// buttonSend.disabled = false;
-// input.addEventListener("change", stateHandle);
-// function stateHandle() {
-//   if (checkbox.value === "") {
-//     button.disabled = false;
-//   } else {
-//     button.disabled = true;
-//   }
-// }
+buttonSend.disabled = true;
+function stateHandle() {
+  console.log(checkbox.checked);
+  if (!checkbox.checked) {
+    buttonSend.disabled = true;
+  } else {
+    buttonSend.disabled = false;
+  }
+}
+checkbox.addEventListener("change", stateHandle);
+
 // Fim Requisito 18 - fonte: https://www.delftstack.com/pt/howto/javascript/javascript-disable-button/  ,  https://www.w3schools.com/jsref/prop_select_disabled.asp
