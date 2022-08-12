@@ -10,9 +10,12 @@
 </head>
 
 <body>
+  <!-- logo da trybewarts -->
   <header class="header">
     <img src="images/trybewarts-header-logo.svg" alt="" class="trybewarts-header-logo">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
+
+    <!-- formulário de login -->
     <form action="" method="GET" enctype="multipart/formdata" class="trybewarts-login">
       <label for="email">
         <input type="email" name="email" id="input-email" placeholder="Email">
@@ -23,8 +26,9 @@
       <button type="submit">Entrar</button>
     </form>
   </header>
+
   <main class="flex-container">
-    <!-- requisito 03 -->
+    <!-- requisito 03 formulário de cadastro -->
     <form id="evaluation-form" class="flex-container" action="">
       <div>
         <input type="text" name="" id="input-name" placeholder="Nome">
@@ -98,7 +102,11 @@
       <label for="" class="textarea">Deixe seu comentário:</label>
       <textarea maxlength="500"></textarea>
       <!-- fim requisito 15 -->
-      <div>
+      
+      <!-- contador de caracteres -->
+      <p id="counter">500</p>
+
+      <div id="validator">
         <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
         <input type="checkbox" id="agreement">
       </div>
@@ -121,6 +129,7 @@
     </form>
     <!-- fim requisito 21 -->
   </main>
+
   <footer>
     Direitos reservados à Trybewarts©
   </footer>
