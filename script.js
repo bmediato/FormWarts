@@ -19,17 +19,32 @@ console.log(button);
 button.addEventListener('click', validar);
 // Fim Requisito 3
 
+// contador de caracteres
+const textArea = document.getElementById('comment-section');
+const charCounter = document.getElementById('counter');
+const maxLength = 500;
+
+function characterCounter() {
+  const typedCharacters = textArea.value.length;
+  const counter = maxLength - typedCharacters;
+  charCounter.textContent = `${counter} /500`; // essa atribuiçao é uma 'template literals', sugerido pelo lint: https://eslint.org/docs/latest/rules/prefer-template
+}
+textArea.addEventListener('input', characterCounter);
+// ref: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event
+
 // Requisito 18 - Crie um botão de "Enviar" para submeter o formulário.
 const buttonSend = document.getElementById('submit-btn');
 const checkbox = document.getElementById('agreement');
 
-buttonSend.disabled = false;
-input.addEventListener('change', stateHandle);
+buttonSend.disabled = true;
 function stateHandle() {
-  if (checkbox.value === '') {
-    button.disabled = false;
+  console.log(checkbox.checked);
+  if (!checkbox.checked) {
+    buttonSend.disabled = true;
   } else {
-    button.disabled = true;
+    buttonSend.disabled = false;
   }
 }
+checkbox.addEventListener('change', stateHandle);
+
 // Fim Requisito 18 - fonte: https://www.delftstack.com/pt/howto/javascript/javascript-disable-button/  ,  https://www.w3schools.com/jsref/prop_select_disabled.asp
