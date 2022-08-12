@@ -24,9 +24,9 @@ const buttonSend = document.getElementById('submit-btn');
 const checkbox = document.getElementById('agreement');
 
 buttonSend.disabled = false;
-input.addEventListener("change", stateHandle);
+input.addEventListener('change', stateHandle);
 function stateHandle() {
-  if (checkbox.value === "") {
+  if (checkbox.value === '') {
     button.disabled = false;
   } else {
     button.disabled = true;
