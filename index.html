@@ -17,24 +17,26 @@
 
     <!-- formulário de login -->
     <form action="" method="GET" enctype="multipart/formdata" class="trybewarts-login">
-      <label for="email">
-        <input type="email" name="email" id="input-email" placeholder="Email">
-      </label>
-      <label for="input-senha">
-        <input type="password" name="password" id="input-senha" placeholder="Senha">
-      </label>
-      <button type="submit">Entrar</button>
+      <div>
+        <label for="email">
+          <input type="email" name="email" id="input-email" placeholder="Email">
+        </label>
+        <label for="input-senha">
+          <input type="password" name="password" id="input-senha" placeholder="Senha">
+        </label>
+        <button type="submit" id="botao">Entrar</button>
+      </div>
     </form>
   </header>
 
   <main class="flex-container">
     <!-- requisito 03 formulário de cadastro -->
     <form id="evaluation-form" class="flex-container" action="">
-      <div>
+      <div class="nome-sobren">
         <input type="text" name="" id="input-name" placeholder="Nome">
         <input type="text" name="" id="input-lastname" placeholder="Sobrenome">
       </div>
-      <div>
+      <div class="email-casa">
         <input type="email" name="email" id="input-email" placeholder="Email">
         <!-- fim requisito 03 -->
         <!-- requisito 09 -->
@@ -49,6 +51,7 @@
       </div>
       <!-- fim requisito 09 -->
       <!-- requisito 12 -->
+      <hr>
       <label id="label-family">Qual sua família?</label>
       <label for="comida-1">
         <input type="radio" name="family" value="Frontend">Frontend

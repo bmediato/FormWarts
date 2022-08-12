@@ -6,16 +6,25 @@
   display: flex;
   background-color: rgb(50, 167, 145);
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
 #trybewarts-header-title {
   color: white;
+  font-size: 50px;
+  margin: 10px;
+  font-family: fantasy;
+}
+
+body {
+  background-color: rgba(189, 201, 198, 79);
 }
 
 main {
-  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #trybewarts-forms-logo {
@@ -29,10 +38,11 @@ main {
 
 #evaluation-form {
   display: flex;
-  flex-direction: column; /* Requisito 6 */
+  flex-direction: column;
   width: 675px;
 }
 
+/* Requisito 6 */
 .trybewarts-login {
   display: flex;
 }
@@ -55,8 +65,78 @@ footer {
   bottom: 0;
   margin-top: 3%;
   width: 98.9%;
-  background-color: rgb(50, 167, 145);
+  background-color: rgba(36, 38, 38, 15);
   color: white;
-  padding: 5px;
+  padding: 10px;
   text-align: center;
+  font-size: 25px;
+}
+
+.trybewarts-header-logo {
+  width: 60px;
+}
+
+#input-email {
+  border: 1px solid rgba(199, 212, 208, 83);
+  border-radius: 5px;
+  padding: 10px;
+  font-family: fantasy;
+}
+
+#input-senha {
+  border: 1px solid rgba(199, 212, 208, 83);
+  border-radius: 5px;
+  padding: 10px;
+  font-family: fantasy;
+}
+
+#botao {
+  background-color: rgba(145, 72, 235, 92);
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-family: fantasy;
+  font-size: 18px;
+}
+
+#submit-btn {
+  background-color: rgba(145, 72, 235, 92);
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-family: fantasy;
+  font-size: 20px;
+}
+
+.email-casa {
+  display: flex;
+  margin: 10px;
+  justify-content: space-around;
+}
+
+.nome-sobren {
+  display: flex;
+  justify-content: space-around;
+  width: 750px;
+}
+
+#input-name {
+  border: 1px solid rgba(199, 212, 208, 83);
+  border-radius: 5px;
+  padding: 10px;
+  font-family: fantasy;
+}
+
+#input-lastname {
+  border: 1px solid rgba(199, 212, 208, 83);
+  border-radius: 5px;
+  padding: 10px;
+  font-family: fantasy;
+}
+
+#house {
+  border: 1px solid rgba(199, 212, 208, 83);
+  font-family: fantasy;
+  padding: 5px;
+  background-color: white;
 }
