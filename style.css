@@ -18,13 +18,18 @@
 }
 
 body {
-  background-color: rgba(189, 201, 198, 79);
+  background-color: rgba(248, 247, 255, 100);
+  background-image: url('https://w0.peakpx.com/wallpaper/290/679/HD-wallpaper-harry-potter-harry-potter-and-the-chamber-of-secrets-hogwarts-castle.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 
 main {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 18px;
 }
 
 #trybewarts-forms-logo {
@@ -34,6 +39,7 @@ main {
 
 .flex-container {
   display: flex;
+  padding-top: 20px;
 }
 
 #evaluation-form {
@@ -125,6 +131,7 @@ footer {
   border-radius: 5px;
   padding: 10px;
   font-family: fantasy;
+  width: 45%;
 }
 
 #input-lastname {
@@ -132,6 +139,7 @@ footer {
   border-radius: 5px;
   padding: 10px;
   font-family: fantasy;
+  width: 45%;
 }
 
 #house {
@@ -139,4 +147,68 @@ footer {
   font-family: fantasy;
   padding: 5px;
   background-color: white;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.house-c {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.email {
+  width: 45%;
+}
+
+.familia {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100px;
+  justify-content: space-around;
+  padding: 10px;
+  width: 30%;
+}
+
+.conteudo-favorito {
+  display: flex;
+  width: 70%;
+  flex-flow: row wrap;
+  align-items: center;
+  font-family: fantasy;
+  justify-content: center;
+}
+
+.familia-conteudo {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.container-conteudo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 200px;
+  height: 60px;
+}
+
+.avaliacao {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 11px;
+}
+
+.n-avaliacao {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+#comment-section {
+  border-radius: 5px;
+  resize: none;
 }
