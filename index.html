@@ -17,27 +17,30 @@
 
     <!-- formulário de login -->
     <form action="" method="GET" enctype="multipart/formdata" class="trybewarts-login">
-      <label for="email">
-        <input type="email" name="email" id="input-email" placeholder="Email">
-      </label>
-      <label for="input-senha">
-        <input type="password" name="password" id="input-senha" placeholder="Senha">
-      </label>
-      <button type="submit">Entrar</button>
+      <div>
+        <label for="email">
+          <input type="email" name="email" id="input-email" placeholder="Email">
+        </label>
+        <label for="input-senha">
+          <input type="password" name="password" id="input-senha" placeholder="Senha">
+        </label>
+        <button type="submit" id="botao">Entrar</button>
+      </div>
     </form>
   </header>
 
   <main class="flex-container">
     <!-- requisito 03 formulário de cadastro -->
     <form id="evaluation-form" class="flex-container" action="">
-      <div>
+      <div class="nome-sobren">
         <input type="text" name="" id="input-name" placeholder="Nome">
         <input type="text" name="" id="input-lastname" placeholder="Sobrenome">
       </div>
-      <div>
-        <input type="email" name="email" id="input-email" placeholder="Email">
+      <div class="email-casa">
+        <input type="email" name="email" id="input-email" class="email" placeholder="Email">
         <!-- fim requisito 03 -->
         <!-- requisito 09 -->
+        <div class="house-c">
         <label for="house"> Casa:
           <select id="house">
             <option id="gitnoria-house" value="Gitnória">Gitnória</option>
@@ -47,45 +50,57 @@
           </select>
         </label>
       </div>
+      </div>
       <!-- fim requisito 09 -->
       <!-- requisito 12 -->
-      <label id="label-family">Qual sua família?</label>
-      <label for="comida-1">
-        <input type="radio" name="family" value="Frontend">Frontend
-      </label>
-      <label for="comida-2">
-        <input type="radio" name="family" value="Backend">Backend
-      </label>
-      <label for="comida-3">
-        <input type="radio" name="family" value="FullStack">FullStack
-      </label>
-      <!-- fim requisito 12 -->
+      <hr>
+      <div class="familia-conteudo">
+        <div class="familia">
+          <label id="label-family">Qual sua família?</label>
+          <label for="comida-1">
+            <input type="radio" name="family" value="Frontend">Frontend
+          </label>
+          <label for="comida-2">
+            <input type="radio" name="family" value="Backend">Backend
+          </label>
+          <label for="comida-3">
+            <input type="radio" name="family" value="FullStack">FullStack
+          </label>
+        </div>
+        <!-- fim requisito 12 -->
 
-      <!-- requisito 13 -->
-      <label id="label-content">Qual conteúdo você está com mais vontade de aprender? </label>
-      <label for="conteudo1">
-        <input type="checkbox" id="conteudo1" name="conteudo" class="subject" value="HoFs">Hofs
-      </label>
-      <label for="conteudo2">
-        <input type="checkbox" id="conteudo2" name="conteudo" class="subject" value="Jest">Jest
-      </label>
-      <label for="conteudo3">
-        <input type="checkbox" id="conteudo3" name="conteudo" class="subject" value="Promises">Promises
-      </label>
-      <label for="conteudo4">
-        <input type="checkbox" id="conteudo4" name="conteudo" class="subject" value="React">React
-      </label>
-      <label for="conteudo5">
-        <input type="checkbox" id="conteudo5" name="conteudo" class="subject" value="SQL">SQL
-      </label>
-      <label for="conteudo6">
-        <input type="checkbox" id="conteudo6" name="conteudo" class="subject" value="Python">Python
-      </label>
+        <!-- requisito 13 -->
+        <div class="conteudo-favorito">
+          <label id="label-content">Qual conteúdo você está com mais vontade de aprender? </label>
+          <div class="container-conteudo">
+            <label for="conteudo1">
+              <input type="checkbox" id="conteudo1" name="conteudo" class="subject" value="HoFs">Hofs
+            </label>
+            <label for="conteudo2">
+              <input type="checkbox" id="conteudo2" name="conteudo" class="subject" value="Jest">Jest
+            </label>
+            <label for="conteudo3">
+              <input type="checkbox" id="conteudo3" name="conteudo" class="subject" value="Promises">Promises
+            </label>
+            <label for="conteudo4">
+              <input type="checkbox" id="conteudo4" name="conteudo" class="subject" value="React">React
+            </label>
+            <label for="conteudo5">
+              <input type="checkbox" id="conteudo5" name="conteudo" class="subject" value="SQL">SQL
+            </label>
+            <label for="conteudo6">
+              <input type="checkbox" id="conteudo6" name="conteudo" class="subject" value="Python">Python
+            </label>
+          </div>
+        </div>
+      </div>
+      <hr>
       <!-- fim requisito 13 -->
 
       <!-- campo de avaliação -->
+      <div class="avaliacao">
       <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
-      <div>
+      <div class="n-avaliacao">
         <input type="radio" name="rate" value="1">1
         <input type="radio" name="rate" value="2">2
         <input type="radio" name="rate" value="3">3
@@ -97,12 +112,12 @@
         <input type="radio" name="rate" value="9">9
         <input type="radio" name="rate" value="10">10
       </div>
-
+    </div>
       <!-- requisito 15 -->
       <label for="" class="textarea" id="textarea">Deixe seu comentário:</label>
       <textarea id="comment-section" maxlength="500"></textarea>
       <!-- fim requisito 15 -->
-      
+
       <!-- contador de caracteres -->
       <span id="counter">500/500</span>
 

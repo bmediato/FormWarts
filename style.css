@@ -6,16 +6,30 @@
   display: flex;
   background-color: rgb(50, 167, 145);
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
 #trybewarts-header-title {
   color: white;
+  font-size: 50px;
+  margin: 10px;
+  font-family: fantasy;
+}
+
+body {
+  background-color: rgba(248, 247, 255, 100);
+  background-image: url('https://w0.peakpx.com/wallpaper/290/679/HD-wallpaper-harry-potter-harry-potter-and-the-chamber-of-secrets-hogwarts-castle.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 
 main {
-  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 18px;
 }
 
 #trybewarts-forms-logo {
@@ -25,14 +39,16 @@ main {
 
 .flex-container {
   display: flex;
+  padding-top: 20px;
 }
 
 #evaluation-form {
   display: flex;
-  flex-direction: column; /* Requisito 6 */
+  flex-direction: column;
   width: 675px;
 }
 
+/* Requisito 6 */
 .trybewarts-login {
   display: flex;
 }
@@ -55,8 +71,144 @@ footer {
   bottom: 0;
   margin-top: 3%;
   width: 98.9%;
-  background-color: rgb(50, 167, 145);
+  background-color: rgba(36, 38, 38, 15);
   color: white;
-  padding: 5px;
+  padding: 10px;
   text-align: center;
+  font-size: 25px;
+}
+
+.trybewarts-header-logo {
+  width: 60px;
+}
+
+#input-email {
+  border: 1px solid rgba(199, 212, 208, 83);
+  border-radius: 5px;
+  padding: 10px;
+  font-family: fantasy;
+}
+
+#input-senha {
+  border: 1px solid rgba(199, 212, 208, 83);
+  border-radius: 5px;
+  padding: 10px;
+  font-family: fantasy;
+}
+
+#botao {
+  background-color: rgba(145, 72, 235, 92);
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-family: fantasy;
+  font-size: 18px;
+}
+
+#submit-btn {
+  background-color: rgba(145, 72, 235, 92);
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-family: fantasy;
+  font-size: 20px;
+}
+
+.email-casa {
+  display: flex;
+  margin: 10px;
+  justify-content: space-around;
+}
+
+.nome-sobren {
+  display: flex;
+  justify-content: space-around;
+  width: 750px;
+}
+
+#input-name {
+  border: 1px solid rgba(199, 212, 208, 83);
+  border-radius: 5px;
+  padding: 10px;
+  font-family: fantasy;
+  width: 45%;
+}
+
+#input-lastname {
+  border: 1px solid rgba(199, 212, 208, 83);
+  border-radius: 5px;
+  padding: 10px;
+  font-family: fantasy;
+  width: 45%;
+}
+
+#house {
+  border: 1px solid rgba(199, 212, 208, 83);
+  font-family: fantasy;
+  padding: 5px;
+  background-color: white;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.house-c {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.email {
+  width: 45%;
+}
+
+.familia {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100px;
+  justify-content: space-around;
+  padding: 10px;
+  width: 30%;
+}
+
+.conteudo-favorito {
+  display: flex;
+  width: 70%;
+  flex-flow: row wrap;
+  align-items: center;
+  font-family: fantasy;
+  justify-content: center;
+}
+
+.familia-conteudo {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.container-conteudo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 200px;
+  height: 60px;
+}
+
+.avaliacao {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 11px;
+}
+
+.n-avaliacao {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+#comment-section {
+  border-radius: 5px;
+  resize: none;
 }
