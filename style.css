@@ -2,13 +2,14 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  /* todos os elementos que 'vazarem' para fora da largura/altura
-                    especificada são cortados e escondidos. */
 }
+
+/* todos os elementos que 'vazarem' para fora da largura/altura
+                    especificada são cortados e escondidos. */
 
 /* tamanho de tela para smartphones */
 
-@media (max-width : 576px) {
+@media ( max-width : 576px ) {
 
   * {
     overflow: visible;
@@ -32,7 +33,7 @@
 
 /* tamanho de tela para tablets */
 
-@media (min-width : 577px) and (max-width : 768px) {
+@media ( min-width : 577px ) and ( max-width : 768px ) {
 
   * {
     overflow: visible;
@@ -107,6 +108,7 @@ main {
   display: none;
   border: white solid 2px;
   flex-direction: column;
+
   /* width: 675px; */
 }
 
