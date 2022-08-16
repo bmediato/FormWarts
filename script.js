@@ -1,6 +1,6 @@
 // Requisito 3 - Botão que valida o formulário
 function validar() {
-  const email = document.getElementById('input-email');
+  const email = document.getElementById('email');
   const senha = document.getElementById('input-senha');
 
   const emailValue = email.value;
@@ -60,7 +60,7 @@ function viewForm (){
 
   let nomeInput = document.getElementById('input-name');
   let sobrenomeInput = document.getElementById('input-lastname');
-  let emailInput = document.getElementById('input-email');
+  let emailInput = document.getElementById('email');
   let casaInput = document.getElementById('house');
   // let familiaInput = document.getElementById('label-family');
   // let materiaInput = document.getElementById('container-conteudo');
