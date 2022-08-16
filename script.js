@@ -15,7 +15,7 @@ function validar() {
 }
 
 const button = document.getElementsByTagName('button')[0];
-console.log(button);
+// console.log(button);
 button.addEventListener('click', validar);
 // Fim Requisito 3
 
@@ -48,3 +48,18 @@ function stateHandle() {
 checkbox.addEventListener('change', stateHandle);
 
 // Fim Requisito 18 - fonte: https://www.delftstack.com/pt/howto/javascript/javascript-disable-button/  ,  https://www.w3schools.com/jsref/prop_select_disabled.asp
+
+
+//Requisito 21
+
+let formPrint = document.getElementById('form-data')
+
+
+function viewForm (){
+  let nomeInput = document.getElementById('input-name');
+  let viewInput = document.getElementById('form-data-nome');
+  viewInput.innerHTML = `Nome: ${nomeInput.value}`;
+}
+
+
+buttonSend.addEventListener('click', viewForm);
