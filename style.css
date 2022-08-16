@@ -103,7 +103,10 @@ main {
 
 /* Requisito 21 */
 #form-data {
-  display: none;
+  display: flex;
+  border: white solid 2px;
+  flex-direction: column;
+  width: 675px;
 }
 
 footer {
