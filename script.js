@@ -20,14 +20,14 @@ button.addEventListener('click', validar);
 // Fim Requisito 3
 
 // contador de caracteres
-const textArea = document.getElementById('comment-section');
+const textArea = document.getElementById('textarea');
 const charCounter = document.getElementById('counter');
 const maxLength = 500;
 
 function characterCounter() {
   const typedCharacters = textArea.value.length;
   const counter = maxLength - typedCharacters;
-  charCounter.textContent = `${counter} /500`; // essa atribuiçao é uma 'template literals', sugerido pelo lint: https://eslint.org/docs/latest/rules/prefer-template
+  charCounter.textContent = `${counter}/500`; // essa atribuiçao é uma 'template literals', conforme sugerido pelo lint: https://eslint.org/docs/latest/rules/prefer-template
 }
 textArea.addEventListener('input', characterCounter);
 // ref: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event
