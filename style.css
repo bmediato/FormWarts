@@ -212,3 +212,11 @@ footer {
   border-radius: 5px;
   resize: none;
 }
+/* tamanho de tela para smartphones */
+@media (max-width: 576px) {
+  
+}
+/* tamanho de tela para tablets */
+@media (min-width: 577px) and (max-width: 768px) {
+
+}
