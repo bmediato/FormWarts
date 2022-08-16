@@ -1,5 +1,45 @@
 * {
   margin: 0;
+  padding: 0;
+  overflow: hidden; /* todos os elementos que 'vazarem' para fora da largura/altura
+                    especificada são cortados e escondidos. */
+}
+
+/* tamanho de tela para smartphones */
+
+@media ( max-width : 576px ) {
+
+  * {
+    overflow: visible;
+  }
+
+  .header {
+    flex-wrap: wrap;
+    padding: 4%;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nome-sobren {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* tamanho de tela para tablets */
+
+@media ( min-width : 577px ) and ( max-width : 768px ) {
+
+  * {
+    overflow: visible;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
 }
 
 .header {
@@ -214,12 +254,4 @@ footer {
 #comment-section {
   border-radius: 5px;
   resize: none;
-}
-/* tamanho de tela para smartphones */
-@media (max-width: 576px) {
-  
-}
-/* tamanho de tela para tablets */
-@media (min-width: 577px) and (max-width: 768px) {
-
 }
