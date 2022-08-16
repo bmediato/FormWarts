@@ -46,6 +46,7 @@ function stateHandle() {
   }
 }
 checkbox.addEventListener('change', stateHandle);
+
 // Fim Requisito 18 - fonte: https://www.delftstack.com/pt/howto/javascript/javascript-disable-button/  ,  https://www.w3schools.com/jsref/prop_select_disabled.asp
 
 
@@ -61,20 +62,21 @@ function viewForm (){
   let sobrenomeInput = document.getElementById('input-lastname');
   let emailInput = document.getElementById('input-email');
   let casaInput = document.getElementById('house');
-  let familiaInput = document.getElementById('label-family');
-  let materiaInput = document.getElementById('container-conteudo');
-  let avaliacaoInput = document.getElementById('n-avaliacao');
-  let observacoesInput = document.getElementById('textarea');
+  // let familiaInput = document.getElementById('label-family');
+  // let materiaInput = document.getElementById('container-conteudo');
+  // let avaliacaoInput = document.getElementById('n-avaliacao');
+  // let observacoesInput = document.getElementById('textarea');
 
   viewInput.innerHTML = `Nome: ${nomeInput.value} ${sobrenomeInput.value}; 
   E-mail: ${emailInput.value};
-  Casa: ${casaInput.value};
-  Família: ${familiaInput.value};
-  Materia: ${materiaInput.value};
-  Avaliação: ${avaliacaoInput.value};
-  Observações: ${observacoesInput.value}`;
+  Casa: ${casaInput.value}`;
+  // Família: ${familiaInput.value};
+  // Materia: ${materiaInput.value};
+  // Avaliação: ${avaliacaoInput.value};
+  // Observações: ${observacoesInput.value};
 
 }
 
-
+// buttonSend.addEventListener('click', function(event){
+//   event.preventDefault()});
 buttonSend.addEventListener('click', viewForm);
