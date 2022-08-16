@@ -56,9 +56,25 @@ let formPrint = document.getElementById('form-data')
 
 
 function viewForm (){
+  let viewInput = document.getElementById('form-data');
+
   let nomeInput = document.getElementById('input-name');
-  let viewInput = document.getElementById('form-data-nome');
-  viewInput.innerHTML = `Nome: ${nomeInput.value}`;
+  let sobrenomeInput = document.getElementById('input-lastname');
+  let emailInput = document.getElementById('input-email');
+  let casaInput = document.getElementById('house');
+  let familiaInput = document.getElementById('label-family');
+  let materiaInput = document.getElementById('container-conteudo');
+  let avaliacaoInput = document.getElementById('n-avaliacao');
+  let observacoesInput = document.getElementById('textarea');
+
+  viewInput.innerHTML = `Nome: ${nomeInput.value} ${sobrenomeInput.value}; 
+  E-mail: ${emailInput.value};
+  Casa: ${casaInput.value};
+  Família: ${familiaInput.value};
+  Materia: ${materiaInput.value};
+  Avaliação: ${avaliacaoInput.value};
+  Observações: ${observacoesInput.value}`;
+
 }
 
 
