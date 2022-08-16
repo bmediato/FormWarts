@@ -15,19 +15,19 @@ function validar() {
 }
 
 const button = document.getElementsByTagName('button')[0];
-console.log(button);
+// console.log(button);
 button.addEventListener('click', validar);
 // Fim Requisito 3
 
 // contador de caracteres
-const textArea = document.getElementById('comment-section');
+const textArea = document.getElementById('textarea');
 const charCounter = document.getElementById('counter');
 const maxLength = 500;
 
 function characterCounter() {
   const typedCharacters = textArea.value.length;
   const counter = maxLength - typedCharacters;
-  charCounter.textContent = `${counter} /500`; // essa atribuiçao é uma 'template literals', sugerido pelo lint: https://eslint.org/docs/latest/rules/prefer-template
+  charCounter.textContent = `${counter}/500`; // essa atribuiçao é uma 'template literals', conforme sugerido pelo lint: https://eslint.org/docs/latest/rules/prefer-template
 }
 textArea.addEventListener('input', characterCounter);
 // ref: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event
@@ -48,3 +48,35 @@ function stateHandle() {
 checkbox.addEventListener('change', stateHandle);
 
 // Fim Requisito 18 - fonte: https://www.delftstack.com/pt/howto/javascript/javascript-disable-button/  ,  https://www.w3schools.com/jsref/prop_select_disabled.asp
+
+
+//Requisito 21
+
+let formPrint = document.getElementById('form-data')
+
+
+function viewForm (){
+  let viewInput = document.getElementById('form-data');
+
+  let nomeInput = document.getElementById('input-name');
+  let sobrenomeInput = document.getElementById('input-lastname');
+  let emailInput = document.getElementById('input-email');
+  let casaInput = document.getElementById('house');
+  // let familiaInput = document.getElementById('label-family');
+  // let materiaInput = document.getElementById('container-conteudo');
+  // let avaliacaoInput = document.getElementById('n-avaliacao');
+  // let observacoesInput = document.getElementById('textarea');
+
+  viewInput.innerHTML = `Nome: ${nomeInput.value} ${sobrenomeInput.value}; 
+  E-mail: ${emailInput.value};
+  Casa: ${casaInput.value}`;
+  // Família: ${familiaInput.value};
+  // Materia: ${materiaInput.value};
+  // Avaliação: ${avaliacaoInput.value};
+  // Observações: ${observacoesInput.value};
+
+}
+
+// buttonSend.addEventListener('click', function(event){
+//   event.preventDefault()});
+buttonSend.addEventListener('click', viewForm);
