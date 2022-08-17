@@ -55,7 +55,6 @@ checkbox.addEventListener('change', stateHandle);
 
 function viewForm() {
   const viewInput = document.getElementById('form-data');
-
   const nomeInput = document.getElementById('input-name');
   const sobrenomeInput = document.getElementById('input-lastname');
   const emailInput = document.getElementById('email');
